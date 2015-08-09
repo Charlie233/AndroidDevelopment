@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="thinkers.hmm.ui.AddNewCourse">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/add_new_course_title"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:id="@+id/titleNewCourse"
+            android:layout_marginTop="9dp"
+            android:layout_alignParentTop="true"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddNewCourse_name_label"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal|left"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editName"
+            android:textSize="24dp"
+            android:layout_below="@+id/titleNewCourse"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.01"
+            android:hint="@string/AddNewCourse_name_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddNewCourse_code_label"
+            android:id="@+id/textView14"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCode"
+            android:textSize="24dp"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.01"
+            android:hint="@string/AddNewCourse_code_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddNewCourse_school_label"
+            android:id="@+id/textView15"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSchool"
+            android:textSize="24dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.01"
+            android:hint="@string/AddNewCourse_school_hint" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_course_submit_button"
+                android:id="@+id/button"
+                android:layout_below="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_weight="1"
+                android:textSize="24dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_course_cancel_button"
+                android:id="@+id/button2"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_weight="1"
+                android:textSize="24dp" />
+        </TableRow>
+
+    </LinearLayout>
+
+</RelativeLayout>
